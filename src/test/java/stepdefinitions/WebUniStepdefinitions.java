@@ -74,6 +74,7 @@ public class WebUniStepdefinitions {
 
     @And("sayfalari kapatir")
     public void sayfalariKapatir() {
+
         Driver.quitDriver();
     }
 }
