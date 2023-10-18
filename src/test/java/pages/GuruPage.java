@@ -5,16 +5,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class GooglePage {
+import java.util.List;
 
-    public GooglePage(){
-
+public class GuruPage {
+    public GuruPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//*[@jsname='yZiJbe']")
-    public WebElement googleSearchBox;
-
+    @FindBy(xpath = "//tr/th")
+    public List<WebElement> basliklarListesi;
 
 
 }

@@ -30,4 +30,11 @@ public class HerOkuAppPage {
 
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     public WebElement checkBox2;
+
+
+    @FindBy(xpath = "//*[@onclick='addElement()']")
+    public WebElement addElementButonu;
+
+    @FindBy(xpath = "//*[text()='Delete']")
+    public WebElement deleteButonu;
 }
