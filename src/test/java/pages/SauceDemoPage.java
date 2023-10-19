@@ -32,12 +32,14 @@ public class SauceDemoPage {
     @FindBy(xpath = "//button[@id='add-to-cart-sauce-labs-backpack']")
     public WebElement addToCartButton;
 
-
-    @FindBy(xpath = "//a[@class='shopping_cart_link']")
-    public WebElement urunSepeti;
+    @FindBy(xpath= "//div[@id='shopping_cart_container']")
+    public WebElement alisverisSepeti;
 
     @FindBy(xpath = "//div[@class='inventory_item_name']")
-    public WebElement secilenUrununGorunurluk;
+    public WebElement sepetUrunElement;
+
+
+
 
 
 }
